@@ -1,0 +1,94 @@
+/*
+Exercise 1
+const myList = ['Milk', 'Bread', 'Apples'];
+console.log(myList.length);
+myList[1] = 'Bananas';
+console.log(myList);
+
+Exercise 2
+const myList = [];
+myList.push('Milk', 'Bread', 'Apples');
+myList.splice(1, 1, 'Bananas', 'Eggs');
+const removeLast = myList.pop();
+console.log(removeLast);
+myList.sort();
+console.log(myList.indexOf('Milk'));
+myList.splice(1, 0, 'Carrots', 'Lettuce');
+const myList2 = ['Juice', 'Pop'];
+const finalList = myList.concat(myList2, myList2);
+console.log(finalList.lastIndexOf('Pop'));
+console.log(finalList);
+
+Exercise 3
+const myArr = [1,2,3];
+const bigArr = [myArr,myArr,myArr];
+console.log(bigArr[1][1]);
+console.log(bigArr);
+
+
+Exercise 4
+const myCar = {
+    make: 'Toyota',
+    model: 'Camry',
+    tires: 4,
+    doors: 4,
+    color: 'blue',
+    forSale: false
+};
+const propColor = 'color';
+
+myCar[propColor] = 'red';
+console.log(myCar.make + ' ' + myCar.model);
+
+Exercise 5
+const people = {friends:[]};
+const friend1 = {first:'Laurence',last:'Svekis',id:1};
+const friend2 = {first:'Jane',last:'Doe',id:2};
+const friend3 = {first:'John',last:'Doe',id:3};
+people.friends.push(friend1,friend2,friend3);
+console.log(people);
+
+
+const theList = ['Laurence', 'Svekis', true, 35, null, undefined, {
+        test: 'one',
+        score: 55
+    },
+    ['one', 'two']
+];
+
+theList.length;
+Array.isArray(theList);
+theList[1] = "hello World";
+theList.indexOf('Laurence');
+theList.push("new one push");
+theList.pop();
+theList.shift();
+theList.unshift("make me first");
+theList.splice(1, 2);
+console.log(theList);
+*/
+
+const myArr1 = [1,3,5,6,8,9,15];
+console.log(myArr1.indexOf(0));
+console.log(myArr1.indexOf(3));
+//What is output in the console.
+
+
+
+//How do you replace the second element in an array myArr = [1,3,5,6,8,9,15] with the value 4?
+const myArr = [1,3,5,6,8,9,15]
+myArr.splice(1,1,4);
+console.log(myArr);
+
+
+const myArr2 = [];
+myArr2[10] = 'test'
+console.log(myArr2);
+console.log(myArr2[2]);
+//What is output in the console.
+
+const myArr3 = [3,6,8,9,3,55,553,434];
+myArr3.sort();
+myArr3.length = 0;
+console.log(myArr3[0]);
+//What is output in the console.
