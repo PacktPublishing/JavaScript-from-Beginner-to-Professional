@@ -1,0 +1,250 @@
+//Exercise 1
+/*
+const test = false;
+console.log((test));
+if(test){
+    console.log('Its True');
+}
+if(!test){
+    console.log('False now');
+}
+
+//Exercise 2
+
+let age = prompt("How old are you?");
+age = Number(age);
+let message;
+if(age >= 21){
+    message = 'You can enter and drink.';
+}else if(age >= 19){
+    message = 'You can enter but not drink.';
+}else{
+    message = 'You are not allowed in!';
+}
+console.log(message);
+
+
+//Exercise 3
+const id = true;
+const message = (id) ? 'Allowed In' : 'Denied Entry';
+console.log(message);
+
+
+
+//Exercise 4
+let prize = prompt('Pick a number 0-10');
+prize = Number(prize);
+let output = 'My Selection: ';
+switch (prize){
+    case 0: 
+        output += 'Gold ';
+    case 1:
+        output += 'Coin ';
+        break;
+    case 2:
+        output += 'Big ';
+    case 3:
+        output += 'Box of ';
+    case 4:
+        output += 'Silver ';
+    case 5:
+        output += 'Bricks ';
+        break;
+    default:
+        output += 'Sorry Try Again';
+}
+console.log(output);
+
+
+//Project 1
+let answer = "Something went wrong";
+let question = prompt("Ask me anything");
+const randomNumber = Math.floor(Math.random() * 6);
+switch (randomNumber) {
+    case 0:
+        answer = "It will work out";
+        break;
+    case 1:
+        answer = "Maybe maybe not";
+        break;
+    case 2:
+        answer = "Probably not";
+        break;
+    case 3:
+        answer = "Highly likely";
+        break;
+    default:
+        answer = "I don't know about that";
+}
+let output = "You asked me " + question + ". I think that " + answer;
+console.log(output);
+
+
+const myArr = ['Rock', 'Paper', 'Scissors'];
+let output = 'Do you choose (0)' + myArr[0];
+output += ' (1)' + myArr[1];
+output += ' (2)' + myArr[2];
+let player = prompt(output);
+//let player = Math.floor(Math.random() * 3);
+player = Number(player);
+let win;
+let computer = Math.floor(Math.random() * 3);
+let message = "player " + myArr[player] + " vs computer " + myArr[computer] + " ";
+//console.log(message);
+if (player === computer) {
+    win = false;
+    message += 'its a tie';
+} else if (player > computer) {
+    if (computer == 0 && player == 2) {
+        message += 'Computer Wins';
+    } else {
+        message += 'Player Wins';
+    }
+} else {
+    if (computer == 2 && player == 0) {
+        message += 'Player Wins';
+    } else {
+        message += 'Computer Wins';
+    }
+}
+console.log(message);
+
+
+
+//Question 1
+
+const q = 1;
+
+switch (q) {
+    case '1':
+        answer = "one";
+    case 1:
+        answer = 1;
+    case 2:
+        answer = "this is the one";
+        break;
+    default:
+        answer = "not working";
+}
+console.log(answer);
+
+
+let myTime = 9;
+let output;
+if (myTime >= 8 && myTime < 12) {
+    output = "Wake up its morning";
+} else if (myTime >= 12 && myTime < 13) {
+    output = "go to Lunch";
+} else if (myTime >= 13 && myTime <= 16) {
+    output = "Go to work";
+} else if (myTime > 16 && myTime < 20) {
+    output = "Dinner Time";
+} else if (myTime >= 22) {
+    output = "Time to go to sleep";
+} else {
+    output = "You should be sleeping";
+}
+console.log(output);
+
+
+
+let today = prompt('pick a number');
+today = Number(today);
+let output;
+switch (today) {
+case 0:
+  output = "Sunday";
+  break;
+case 1:
+  output = "Monday";
+  break;
+case 2:
+  output = "Tuesday";
+  break;
+case 3:
+  output = "Wednesday";
+  break;
+case 4:
+  output = "Thursday";
+  break;
+case 5:
+  output = "Friday";
+  break;
+case 6:
+  output = "Saturday";
+  break;
+default:
+  output = "Not found";
+}
+console.log('Today is '+output);
+
+
+
+let val = 100;
+let message = (val > 100) ? '${val} was greater than 100' : '${val} was LESS or Equal to 100';
+console.log(message);
+let check = (val % 2) ? 'Odd' : 'Even';
+check = '${val} is ${check}';
+console.log(check);
+
+let a = 5; 
+
+let b = 10; 
+
+let c = 20; 
+
+let d = 30; 
+
+console.log(a > b || b > a); 
+
+console.log(a > b && b > a); 
+
+console.log(d > b || b > a); 
+
+console.log(d > b && b > a); 
+
+
+
+let age = prompt('How old are you?');
+age = Number(age);
+if (!age) {
+    age = prompt('Enter a Number?');
+}
+let message;
+if (age >= 21) {
+    message = 'You are ' + age + ' and allowed to come in and drink.';
+} else if (age >= 18) {
+    message = 'You are ' + age + '  and allowed to come in but NOT drink.';
+} else {
+    message = 'You are NOT allowed in.  Sorry you are only ' + age + ' ';
+}
+console.log(message);
+
+let val = prompt('what number?');
+val = Number(val);
+let num = 100;
+let message = "nothing";
+if (val > num) {
+    message = val + '  was greater than ' + num;
+} else if (val == num) {
+    message = val + '  was equal to ' + num;
+} else {
+    message = val + ' is less than ' + num;
+}
+console.log(message);
+
+let person = prompt('Enter a name?');
+let message;
+switch (person) {
+    case "John" :
+    case "Larry" :
+    case "Jane" :
+    case "Laurence" :
+    message = person +' is my friend';
+    break;
+    default :
+    message = 'I don\'t know '+person;
+}
+console.log(message);
+
+*/
