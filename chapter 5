@@ -1,0 +1,190 @@
+/*
+const hiddenNumbers = [];
+const total = 3;
+const max = 5;
+for(let x=0;x<total;x++){
+
+}
+
+//Exercise #1
+const max = 5;
+const ranNumber = Math.floor(Math.random() * max) + 1;
+console.log(ranNumber);
+let correct = false;
+while (!correct) {
+    let guess = prompt('Guess a Number 1 - ' + max);
+    guess = Number(guess);
+    if (guess === ranNumber) {
+        correct = true;
+        console.log('You got it ' + ranNumber)
+    } else if (guess > ranNumber) {
+        console.log('Too high');
+    } else {
+        console.log('Too Low');
+    }
+}
+
+
+
+//Exercise #3
+
+let tempNum = '';
+let total = prompt('How many digits in the number?');
+let max = 5;
+total = Number(total);
+for (let x = 0; x < total; x++) {
+    const ranNumber = Math.floor(Math.random() * max) + 1;
+    tempNum += ranNumber;
+}
+console.log(tempNum);
+
+
+
+//Exercise #2
+let step = 105;
+let counter = 0;
+do {
+    console.log(counter);
+    counter += step;
+}
+while (counter <= 100);
+
+
+
+
+//Exercise 4
+
+const myTable = [];
+const rows = 4;
+const cols = 7;
+let counter = 0;
+for (let y = 0; y < rows; y++) {
+    let tempTable = [];
+    for (let x = 0; x < cols; x++) {
+        counter++;
+        tempTable.push(counter);
+    }
+    myTable.push(tempTable);
+}
+console.table(myTable);
+
+
+//Exercise 5
+
+const grid = [];
+const cells = 64;
+let counter = 0;
+let row;
+for (let x = 0; x < cells + 1; x++) {
+    if (counter % 8 == 0) {
+        if (row != undefined) {
+            //console.log(row);
+            grid.push(row);
+        }
+        row = [];
+    }
+    counter++;
+    let temp = counter;
+    //console.log(temp);
+    row.push(temp);
+}
+
+console.table(grid);
+
+
+const myArray = [];
+for (let x = 0; x < 10; x++) {
+    myArray.push(x + 1);
+}
+console.log(myArray);
+
+for (let val of myArray) {
+    console.log(val);
+}
+for (let i = 0; i < myArray.length; i++) {
+    console.log(myArray[i]);
+}
+
+
+const myWork = [];
+for (let x = 1; x < 10; x++) {
+    let stat = x % 2 ? true : false;
+    let temp = {
+        name: `Lesson ${x}`
+        , status: stat
+    };
+    myWork.push(temp);
+}
+console.log(myWork);
+
+const obj = {
+    a: 1,
+    b: 2,
+    c: 3
+};
+console.log(obj);
+for (let prop in obj) {
+    console.log(prop, obj[prop]);
+}
+const arr = ['a', 'b', 'c'];
+for (let w = 0; w < arr.length; w++) {
+    console.log(w, arr[w]);
+}
+
+for (el in arr) {
+    console.log(el, arr[el]);
+}
+
+arr.forEach(function (el, index, array) {
+    console.log(array);
+    console.log(index, el);
+})
+
+
+
+
+let output = '';
+let skipThis = 7;
+for (let i = 0; i < 10; i++) {
+  if (i === skipThis) {
+    break;
+  }
+  output += i;
+}
+
+console.log(output);
+
+
+
+
+const myTable = [];
+const numm = 10;
+for(let x=0;x< numm;x++){
+    const temp = [];
+    for(let y = 0;y<numm;y++){
+        temp.push(x*y);
+    }
+    myTable.push(temp);
+}
+
+console.table(myTable);
+
+
+let step = 3;
+
+for (let i = 0; i < 1000; i += step) {
+    if (i > 10) {
+        break;
+    }
+    console.log(i);
+}
+*/
+
+
+const myArray = [1,5,7];
+for(el in myArray){
+    console.log(Number(el));
+    el = Number(el) + 5;
+    console.log(el);
+}
+console.log(myArray);
