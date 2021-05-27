@@ -20,11 +20,12 @@ console.log(finalList.lastIndexOf('Pop'));
 console.log(finalList);
 
 Exercise 3
-const myArr = [1,2,3];
-const bigArr = [myArr,myArr,myArr];
+const myArr = [1, 2, 3];
+const bigArr = [myArr, myArr, myArr];
+console.log(bigArr[0][1]);
 console.log(bigArr[1][1]);
+console.log(bigArr[2][1]);
 console.log(bigArr);
-
 
 Exercise 4
 const myCar = {
@@ -35,10 +36,12 @@ const myCar = {
     color: 'blue',
     forSale: false
 };
-const propColor = 'color';
-
+let propColor = 'color';
 myCar[propColor] = 'red';
+propColor = 'forSale';
+myCar[propColor] = true;
 console.log(myCar.make + ' ' + myCar.model);
+console.log(myCar.forSale);
 
 Exercise 5
 const people = {friends:[]};
