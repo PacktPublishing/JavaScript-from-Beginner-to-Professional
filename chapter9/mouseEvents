@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Complete JavaScript Course</title>
+    <style>
+        .holder {
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .active {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body> 
+      <div class="holder">   
+            <div id="output"></div>   
+    </div>   
+    <script>     
+        const ele = document.querySelector('.holder');
+        ele.addEventListener('mouseover', () => { this.classList.add('active'); })
+        ele.addEventListener('mouseout', () => { this.classList.remove('active'); })
+        ele.addEventListener('mousemove', coordin);
+        function coordin() {
+            let html = "X:" + event.clientX + " | Y:" + event.clientY;
+            document.getElementById('output').innerHTML = html;
+        }
+    </script>
+</body>
+
+</html>
