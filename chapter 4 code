@@ -10,6 +10,27 @@ if(!test){
 }
 
 //Exercise 2
+let age = 10;
+let cost = 0;
+let message;
+if (age < 3) {
+    cost = 0;
+    message = "Access is free under three.";
+} else if (age >= 3 && age < 12) {
+    cost = 5;
+    message ="With the child discount, the fee is 5 dollars";
+} else if (age >= 12 && age < 65) {
+    cost = 10;
+    message ="A regular ticket costs 10 dollars.";
+} else {
+    cost = 7;
+    message ="A ticket is 7 dollars.";
+}
+
+console.log(message);
+console.log("Your Total cost "+cost);
+
+
 
 let age = prompt("How old are you?");
 age = Number(age);
@@ -80,34 +101,27 @@ let output = "You asked me " + question + ". I think that " + answer;
 console.log(output);
 
 
-const myArr = ["Rock", "Paper", "Scissors"];
-let output = "Do you choose (0)" + myArr[0];
-output += " (1)" + myArr[1];
-output += " (2)" + myArr[2];
-let player = prompt(output);
-//let player = Math.floor(Math.random() * 3);
-player = Number(player);
-let win;
-let computer = Math.floor(Math.random() * 3);
-let message = "player " + myArr[player] + " vs computer " + myArr[computer] + " ";
-//console.log(message);
-if (player === computer) {
-    win = false;
-    message += "its a tie";
-} else if (player > computer) {
-    if (computer == 0 && player == 2) {
-        message += "Computer Wins";
-    } else {
-        message += "Player Wins";
-    }
-} else {
-    if (computer == 2 && player == 0) {
-        message += "Player Wins";
-    } else {
-        message += "Computer Wins";
-    }
-}
-console.log(message);
+const myArr = ["Rock", "Paper", "Scissors"]; 
+let computer = Math.floor(Math.random() * 3); 
+let player = Math.floor(Math.random() * 3); 
+let message = "player " + myArr[player] + " vs computer " + myArr[computer] + " "; 
+
+if (player === computer) { 
+    message += "its a tie"; 
+} else if (player > computer) { 
+    if (computer == 0 && player == 2) { 
+        message += "Computer Wins"; 
+    } else { 
+        message += "Player Wins"; 
+    } 
+} else { 
+    if (computer == 2 && player == 0) { 
+        message += "Player Wins"; 
+    } else { 
+        message += "Computer Wins"; 
+    } 
+} 
+console.log(message); 
 
 
 
