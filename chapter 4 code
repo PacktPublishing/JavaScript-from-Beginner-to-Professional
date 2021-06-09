@@ -262,3 +262,13 @@ switch (person) {
 console.log(message);
 
 */
+
+const userNames = ["Mike", "John", "Larry"]; 
+const userInput = "John"; 
+let htmlOutput = ""; 
+if (userNames.indexOf(userInput) > -1) { 
+    htmlOutput = "Welcome, that is a user"; 
+} else { 
+    htmlOutput = "Denied, was not a usernot true "; 
+} 
+console.log(htmlOutput + ":, " + userInput); 
