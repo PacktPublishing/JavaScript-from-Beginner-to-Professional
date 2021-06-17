@@ -1,3 +1,16 @@
+ <div >
+      <button onclick="message(this)">Button 1</button>
+      <button onclick="message(this)">Button 2</button>
+    </div>
+<script>
+    function message(el){
+    console.dir(el);
+}
+</script>
+    
+    
+
+
 <!doctype html>
 <html>
 <head>
