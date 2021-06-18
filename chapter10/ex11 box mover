@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<style>
+    div {
+        background-color: purple;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+    }
+</style>
+<body>
+    <div id="block"></div>
+    <script>
+        const main = document.querySelector("#block");
+        let mover = { speed: 10, dir: 1, pos: 0 };
+        main.addEventListener("click", moveBlock);
+        function moveBlock() {
+            let x = 30;
+            setInterval(function () {
+                if (x < 1) {
+                    clearInterval();
+                } else {
+                    if (mover.pos > 800 || mover.pos < 0) {
+                        mover.dir *= -1;
+                    }
+                    x--;
+                    mover.pos += x * mover.dir;
+                    main.style.left = mover.pos + "px";
+                    console.log(mover.pos);
+                }
+            }, 2);
+        }
+    </script>
+</body>
+</html>
