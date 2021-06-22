@@ -1,0 +1,9 @@
+<body>
+    <div class="ele">Hello World 1</div>
+    <div >Hello World 2</div>
+    <div class="ele">Hello World 3</div>
+<script>
+    const myEles = document.getElementsByClassName("ele");
+    console.log(myEles[0]);
+</script>
+</body>
