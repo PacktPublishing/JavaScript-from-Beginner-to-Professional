@@ -1,0 +1,7 @@
+<body>
+    <div id="one">Hello World</div>
+<script>
+    const myEle = document.getElementById("one");
+    console.log(myEle);
+</script>
+</body>
