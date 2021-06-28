@@ -1,5 +1,3 @@
-        const val1 = 10;
-        const val2 = 5;
         const myArr = [];
 
         for(let x=0;x<10;x++){
