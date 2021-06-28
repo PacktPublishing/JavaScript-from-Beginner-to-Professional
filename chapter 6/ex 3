@@ -7,10 +7,6 @@
             myArr.push(res);
         }
         console.log(myArr);
-        function cal(a, b, op) {
-            if (op == "-") {
-                return a - b;
-            } else {
-                return a + b;
-            }
+        function cal(a, b) {
+            return a + b;
         }
