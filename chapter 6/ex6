@@ -1,37 +1,19 @@
 let start = 10; 
-
   
-
-function loop(val) { 
-
-  console.log(val); 
-
-  if (val < 1) { 
-
-    return 
-
-  } 
-
-  return loop(val - 1); 
-
-} 
-
-loop(start); 
-
 function loop1(val) { 
-
   console.log(val); 
-
-  if (val > 0) { 
-
-    val--; 
-
-    loop1(val); 
-
+  if (val < 1) { 
+    return 
   } 
-
-  return 'end'; 
-
+  return loop1(val - 1); 
 } 
-
 loop1(start); 
+function loop2(val) { 
+  console.log(val); 
+  if (val > 0) { 
+    val--; 
+    loop2(val); 
+  } 
+  return 'end'; 
+} 
+loop2(start); 
