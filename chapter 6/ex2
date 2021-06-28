@@ -1,0 +1,13 @@
+        const val1 = 10;
+        const val2 = 5;
+        let operat = "-";
+        console.log(cal(val1, val2, operat));
+        operat = "+";
+        console.log(cal(val1, val2, operat));
+        function cal(a, b, op) {
+            if (op == "-") {
+                return a - b;
+            } else {
+                return a + b;
+            }
+        }
