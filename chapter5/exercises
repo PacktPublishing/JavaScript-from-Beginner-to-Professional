@@ -28,15 +28,15 @@ while (!correct) {
 
 //Exercise #3
 
-let tempNum = '';
-let total = prompt('How many digits in the number?');
-let max = 5;
-total = Number(total);
-for (let x = 0; x < total; x++) {
-    const ranNumber = Math.floor(Math.random() * max) + 1;
-    tempNum += ranNumber;
-}
-console.log(tempNum);
+let tempNum = ''; 
+let total = prompt('How many digits in the number?'); 
+let max = 5; 
+total = Number(total); 
+for (let x = 0; x < total; x++) { 
+    const ranNumber = Math.floor(Math.random() * (max + 1))  ;
+    tempNum += ranNumber; 
+} 
+console.log(tempNum); 
 
 
 
