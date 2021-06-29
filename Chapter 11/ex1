@@ -1,5 +1,6 @@
-        const val = "world hello this will be capitalized for each word";
+        const val = "world HEllo thIs will be capiTalized for each word";
         function wordsCaps(str) {
+            str = str.toLowerCase();
             const tempArr = [];
             let words = str.split(" ");
             words.forEach(word => {
