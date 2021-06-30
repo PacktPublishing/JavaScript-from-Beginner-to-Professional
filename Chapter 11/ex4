@@ -8,7 +8,7 @@
             window.setTimeout(update, 1000);
         }
         function countdown() {
-            const total = Date.parse(endDate) - Date.parse(new Date());
+            const total = Date.parse(endDate) - new Date();
             const seconds = Math.floor((total / 1000) % 60);
             const minutes = Math.floor((total / 1000 / 60) % 60);
             const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
