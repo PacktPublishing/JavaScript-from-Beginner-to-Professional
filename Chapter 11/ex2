@@ -1,7 +1,7 @@
         let val = "I love JavaScript";
         val.toLowerCase();
         let vowels = ["a","e","i","o","u"];
-        const output = document.querySelector("output");
+   
         vowels.forEach((letter,index) =>{
             let temp = letter.toLowerCase();
             console.log(temp);
