@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+        <title>Complete JavaScript Course</title>
+</head>
+<body>
+    <script>
+        const val = "Bye Bye";
+        const app = function () {
+            const val = "Hello World";
+            function init() {
+                console.log(val);
+            }
+            return {
+                init: init
+            };
+        }();
+        document.addEventListener('DOMContentLoaded', app.init);
+    </script>
+</body>
+</html>
