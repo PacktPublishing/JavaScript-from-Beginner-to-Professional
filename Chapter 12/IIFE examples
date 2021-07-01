@@ -1,0 +1,17 @@
+        let val = '1000';
+
+        (function () {
+            console.log('hello');
+            let val = '100';  // local scope variable
+        })();
+
+        let result = (function () {
+            let val = 'Laurence';
+            return val;
+        })();
+        console.log(result);
+        console.log(val);
+
+        (function (val) {
+            console.log(`My name is ${val}`);
+        })('Laurence');
