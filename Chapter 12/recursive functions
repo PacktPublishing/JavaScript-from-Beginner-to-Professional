@@ -1,0 +1,19 @@
+let start = 100;
+loop(start);
+loop1(start);
+function loop(val) {
+  console.log(val);
+  if (val < 1) {
+    return
+  }
+  loop(val - 1);
+}
+
+function loop1(val) {
+  console.log(val);
+  if (val > 0) {
+    val--;
+    loop1(val);
+  }
+  return 'end';
+}
