@@ -25,9 +25,9 @@
                 const img = document.createElement("img");
                 img.classList.add("thumb");
                 img.file = file;
-                output.appendChild(img); // Assuming that "preview" is the div output where the content will be displayed.
+                output.appendChild(img);
                 const reader = new FileReader();
-                reader.onload = (function (aImg) { return function (e) { aImg.src = e.target.result; }; })(img);
+                reader.onload = (function (myImg) { return function (e) { myImg.src = e.target.result; }; })(img);
                 reader.readAsDataURL(file);
             }
         }
