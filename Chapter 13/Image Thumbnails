@@ -27,7 +27,7 @@
                 img.file = file;
                 output.appendChild(img);
                 const reader = new FileReader();
-                reader.onload = (function (myImg) { return function (e) { myImg.src = e.target.result; }; })(img);
+                reader.onload = (function (myImg) { return function (ele) { myImg.src = ele.target.result; }; })(img);
                 reader.readAsDataURL(file);
             }
         }
