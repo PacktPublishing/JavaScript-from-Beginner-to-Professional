@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Canvas HTML5</title>
+    <style>
+        #canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+<div><canvas id="canvas"></canvas></div>
+<script>
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+const ballSize = 10;
+let x = canvas.width/2;
+let y = canvas.height/2;
+let dx = 1;
+let dy = 1;
+function drawBall() {
+    ctx.beginPath();
+    ctx.arc(x, y, ballSize, 0, Math.PI*2);
+    ctx.fillStyle = "red";
+    ctx.fill();
+    ctx.closePath();
+}
+function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawBall();
+    if(x + dx > canvas.width-ballSize || x + dx < ballSize) {
+        dx *= -1;
+    }
+    if(y + dy > canvas.height-ballSize || y + dy < ballSize) {
+        dy *= -1;
+    }
+    x += dx;
+    y += dy;
+}
+setInterval(draw, 10);
+    </script>
+</body>
+
+</html>
