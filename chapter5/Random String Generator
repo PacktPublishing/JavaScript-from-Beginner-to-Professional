@@ -1,0 +1,15 @@
+<!DOCTYPE html><html>
+<head><title>Random String Generator</title></head>
+<body>
+    <script>
+        let output = "";
+        let letters = "abcdefghijklmnopqrstuvwxyz";
+        let total = prompt('How many letters in the output?');
+        total = (isNaN(total)) ? 10 : total;
+        for (var i = 0; i < total; i++) {
+            output += letters.charAt(Math.floor(Math.random() * letters.length));
+        }
+        console.log(output);
+    </script>
+</body>
+</html>
