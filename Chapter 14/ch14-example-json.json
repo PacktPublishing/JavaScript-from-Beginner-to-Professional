@@ -1,0 +1,13 @@
+{
+  "name": "Malika",
+  "age": 50,
+  "profession": "programmer",
+  "languages": ["JavaScript", "C#", "Python"],
+  "address": {
+    "street": "Some street",
+    "number": 123,
+    "zipcode": "3850AA",
+    "city": "Utrecht",
+    "country": "The Netherlands"
+  }
+}

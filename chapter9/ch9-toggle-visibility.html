@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <script>
+      function toggleDisplay(){
+        let p = document.getElementById("magic");
+        if(p.style.display === "none") {
+          p.style.display = "block";
+        } else {
+          p.style.display = "none";
+        }
+      }
+    </script>
+    <p id="magic">I might disappear and appear.</p>
+    <button onclick="toggleDisplay()">Magic!</button>
+  </body>
+</html>

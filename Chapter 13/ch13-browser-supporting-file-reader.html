@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <div id="message"></div>
+    <script>
+      let message = document.getElementById("message");
+      if (window.FileReader) {
+        message.innerText = "Good to go!";
+      } else {
+        message.innerText = "No FileReader :(";
+      }
+    </script>
+  </body>
+</html>
