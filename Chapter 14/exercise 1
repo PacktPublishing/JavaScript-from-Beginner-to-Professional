@@ -11,6 +11,6 @@
         reloader();
         function reloader() {
             myList.forEach((el) => {
-                console.log(`${el.name} = ${el.staus}`);
+                console.log(`${el.name} = ${el.status}`);
             });
         }
