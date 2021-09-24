@@ -1,0 +1,33 @@
+<!doctype html >
+<html>
+<head>
+    <title>JS Tester</title>
+    <style>.box{width:200px;height:100px;border:1px solid black}</style>
+</head>
+<body> 
+    <div class="container">
+        <div class="box" id="box0">Box #1</div>
+        <div class="box" id="box1">Box #2</div>
+        <div class="box" id="box2">Box #3</div>
+        <div class="box" id="box3">Box #4</div>
+    </div> 
+    <script>      
+        const counter = [];  
+        const main = document.querySelector(".container");
+        main.addEventListener("click",tracker);
+        function tracker(e){
+            const el = e.target;
+            if(el.id){
+            const temp = {};
+            temp.content = el.textContent;
+            temp.id = el.id;
+            temp.tagName = el.tagName;
+            temp.class = el.className;
+            console.dir(el);
+            counter.push(temp);
+            console.log(counter);
+            }
+        }
+    </script>
+</body>
+</html>
