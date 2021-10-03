@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div id="whatname"></div>
+    <button onclick="whatName()">What name?</button>
+    <script>
+        window.localStorage.setItem("name", "That name!");
+        function whatName() {
+            window.localStorage.clear();
+            document.getElementById("whatname").innerText = window.localStorage.getItem("name");
+        }
+    </script>
+</body>
+
+</html>

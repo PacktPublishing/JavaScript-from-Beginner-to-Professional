@@ -1,0 +1,34 @@
+{
+    "companies": [
+        {
+            "name": "JavaScript Code Dojo",
+            "addresses": [
+                {
+                    "street": "123 Main street",
+                    "zipcode": 12345,
+                    "city" : "Scott"
+                },
+                {
+                    "street": "123 Side street",
+                    "zipcode": 35401,
+                    "city" : "Tuscaloosa"
+                }
+            ]
+        },
+        {
+            "name": "Python Code Dojo",
+            "addresses": [
+                {
+                    "street": "123 Party street",
+                    "zipcode": 68863,
+                    "city" : "Nebraska"
+                },
+                {
+                    "street": "123 Monty street",
+                    "zipcode": 33306,
+                    "city" : "Florida"
+                }
+            ]
+        }
+    ]
+}
