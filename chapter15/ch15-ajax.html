@@ -1,0 +1,22 @@
+<html>
+  <head> </head>
+  <body>
+    <div id="content">
+      <h1>AJAX in action!</h1>
+      <button type="button" onclick="call()">Go go greek God!</button>
+    </div>
+    <script>
+      function call() {
+        let xhttp = new XMLHttpRequest();
+        let url = "some valid url";
+        xhttp.load = function () {
+          if (this.status == 200 && this.readyState == 4) {
+            document.getElementById("content").innerHTML = this.responseText;
+          }
+        };
+        xhttp.open("GET", url, true);
+        xhttp.send();
+      }
+    </script>
+  </body>
+</html>

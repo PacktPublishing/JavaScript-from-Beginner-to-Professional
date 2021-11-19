@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <style>
+      canvas {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <canvas id="canvas"></canvas>
+    <script>
+      window.onload = init;
+      var canvas = document.getElementById("canvas");
+      var ctx = canvas.getContext("2d");
+      canvas.height = 500;
+      canvas.width = 500;
+      var pos = {
+        x: 0,
+        y: 50,
+      };
+
+      function init() {
+        draw();
+      }
+
+      function draw() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        pos.x = pos.x + 5;
+        if (pos.x > canvas.width) {
+          pos.x = 0;
+        }
+        if (pos.y > canvas.height) {
+          pos.y = 0;
+        }
+
+        ctx.fillRect(pos.x, pos.y, 100, 100);
+        window.setTimeout(draw, 50);
+      }
+    </script>
+  </body>
+</html>
