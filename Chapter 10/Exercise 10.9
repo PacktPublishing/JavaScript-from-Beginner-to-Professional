@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <title>JS Tester</title>
+</head>
+<body>
+    <div>
+        <button>Button 1</button>
+        <button>Button 2</button>
+        <button>Button 3</button>
+    </div>
+    <script>
+        const btns = document.querySelectorAll("button");
+        btns.forEach((btn)=>{
+            function output(){
+                console.log(this.textContent);
+            }
+            btn.addEventListener("click",output);
+        })
+    </script>
+
+</body>
+</html>

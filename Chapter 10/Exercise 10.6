@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+    <title>JS Tester</title>
+</head>
+<body>
+    <div class="container">
+        <div class="myEle">One</div>
+        <div class="myEle">Two</div>
+        <div class="myEle">Three</div>
+        <div class="myEle">Four</div>
+        <div class="myEle">Five</div>
+    </div>
+    <script>
+        const eles = document.querySelectorAll(".myEle");
+        console.log(eles);
+        eles.forEach((el) => {
+            console.log(el);
+        })
+    </script>
+</body>
+</html>

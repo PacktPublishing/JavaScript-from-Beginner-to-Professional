@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+    <title>JS Tester</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            background-color: white;
+        }
+        .red {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">1
+        <div id="dragme" draggable="true">
+            Drag Me Please!
+        </div>
+    </div>
+    <div class="box">2</div>
+    <script>
+        const dragme = document.querySelector("#dragme");
+        dragme.addEventListener("dragstart", (e) => {
+            dragme.style.opacity = .5;
+        })
+        dragme.addEventListener("dragend", (e) => {
+            dragme.style.opacity = "";
+        })
+        const boxes = document.querySelectorAll(".box");
+        boxes.forEach(box => {
+            box.addEventListener("dragenter", (e) => {
+                e.target.classList.add('red');
+            })
+            box.addEventListener("dragover", (e) => {
+                e.preventDefault();
+            });
+            box.addEventListener("dragleave", (e) => {
+                //console.log("leave");
+                e.target.classList.remove('red');
+            });
+            box.addEventListener("drop", (e) => {
+                e.preventDefault();
+                console.log("dropped");
+                e.target.appendChild(dragme);
+            });
+        })
+        function dragStart(e) {
+            console.log("Started");
+        }
+    </script>
+
+</body>
+</html>

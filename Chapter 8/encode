@@ -1,0 +1,9 @@
+const secretMes1 = "How's%20it%20going%3F";    
+const secretMes2 = "How's it going?";
+const encodedComp = encodeURIComponent(secretMes1);
+console.log(encodedComp);
+const decodedComp = decodeURIComponent(secretMes2);
+console.log(decodedComp);
+const uri = "http://www.basescripts.com?=Hello World";
+const encoded = encodeURI(uri);
+console.log(encoded);
