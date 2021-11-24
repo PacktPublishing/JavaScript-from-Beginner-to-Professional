@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+    <title>Canvas HTML5</title>
+    <style>
+        #canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="640" height="640">Not Supported</canvas>
+    <script>
+        const canvas = document.querySelector("#canvas");
+        const ctx = canvas.getContext("2d");
+        ctx.beginPath();
+        ctx.fillStyle = "red";
+        ctx.arc(300, 130, 100, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.beginPath();
+        ctx.fillStyle = "black";
+        ctx.arc(250, 120, 20, 0, Math.PI * 2);
+        ctx.moveTo(370, 120);
+        ctx.arc(350, 120, 20, 0, Math.PI * 2);
+        ctx.moveTo(240, 160);
+        ctx.arc(300, 160, 60, 0, Math.PI);
+        ctx.fill();
+        ctx.moveTo(300, 130);
+        ctx.lineTo(300, 150);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(300, 230);
+        ctx.lineTo(300, 270);
+        ctx.lineTo(400, 270);
+        ctx.lineTo(200, 270);
+        ctx.lineTo(300, 270);
+        ctx.lineTo(300, 350);
+        ctx.lineTo(400, 500);
+        ctx.moveTo(300, 350);
+        ctx.lineTo(200, 500);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.fillStyle = "blue";
+        ctx.moveTo(200, 50);
+        ctx.lineTo(400, 50);
+        ctx.lineTo(300, 20);
+        ctx.lineTo(200, 50);
+        ctx.fill();
+        ctx.stroke();
+    </script>
+</body>
+</html>
