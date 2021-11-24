@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+    <title>JS Tester</title>
+</head>
+<body>   
+    <script>        
+        document.addEventListener("DOMContentLoaded", (e) => {
+            message("Document ready", e);
+        });
+        window.onload = (e) => {
+            message("Window ready", e);
+        }
+        function message(val, event) {
+            console.log(event);
+            console.log(val);
+        }
+    </script>
+</body>
+</html>
