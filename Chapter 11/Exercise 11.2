@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<body>
+    <div>red</div>
+    <div>blue</div>
+    <div>green</div>
+    <div>yellow</div>
+    <script>
+        const divs = document.querySelectorAll("div");
+        divs.forEach((el)=>{
+            el.addEventListener("click",()=>{
+                document.body.style.backgroundColor = el.textContent;
+            })
+        })
+    </script>
+</body>
+</html>
