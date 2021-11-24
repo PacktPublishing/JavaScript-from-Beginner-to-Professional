@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Click Me Game</title>
+    <style>
+        .output {
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            margin: auto;
+            text-align: center;
+        }
+
+        .box {
+            width: 50px;
+            height: 50px;
+            position: relative;
+            top: 50px;
+            left: 20%;
+            background-color: red;
+            border: 1px solid black;
+            font-size: 1.5em;
+        }
+
+        .message {
+            text-align: center;
+            padding: 10px;
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="output"></div>
+    <script>
+        const output = document.querySelector('.output');
+        const message = document.createElement('div');
+        message.classList.add('message');
+        document.body.prepend(message);
+        message.textContent = "Press to Start";
+        const box = document.createElement('div');
+        const game = {
+            timer: 0,
+            start: null
+        };
+        box.classList.add('box');
+        output.append(box);
+
+        box.addEventListener('click', (e) => {
+            box.textContent = "";
+            box.style.display = 'none';
+            game.timer = setTimeout(addBox, ranNum(3000));
+            if (!game.start) {
+                message.textContent = 'Loading....';
+            } else {
+                const cur = new Date().getTime();
+                const dur = (cur - game.start) / 1000;
+                message.textContent = `It took ${dur} seconds to click`;
+            }
+        })
+
+        function addBox() {
+            message.textContent = 'Click it...';
+            game.start = new Date().getTime();
+            box.style.display = 'block';
+            box.style.left = ranNum(450) + 'px';
+            box.style.top = ranNum(450) + 'px';
+        }
+
+        function ranNum(max) {
+            return Math.floor(Math.random() * max);
+        }
+    </script>
+</body>
+
+</html>

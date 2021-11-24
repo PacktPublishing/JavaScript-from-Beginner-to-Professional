@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+    <title>JS Tester</title>
+</head>
+<body>
+    <div class="container">
+        Size: <select id="iSize">
+                        <option value="">Select</option>
+                        <option value="150x150">Small</option>
+                        <option value="350x150" selected>Medium</option>
+                        <option value="750x150">Large</option>
+                    </select>
+        <br>Add Text: <input id="iText" type="text" value="Hello World">
+        <br>Select Color: <input id="iColor" type="color" value="222">
+        <br>Preview:<br><img src="" id="myImage">
+           
+    </div>
+    <script>
+        const base = "http://via.placeholder.com/";
+        const myImage = document.querySelector("#myImage");
+        const myArr = { iColor: "222", iText: "Hello World", iSize: "350x150" };
+        const container = document.querySelector(".container");
+        const eles = container.querySelectorAll("select,input");
+        eles.forEach(el => {
+            el.addEventListener("change", (e) => {
+                console.log(el);
+                let val = el.value.replace("#", "");
+                myArr[el.id] = val;
+                let temp = base + myArr.iSize + "/" + myArr.iColor + "/fff?text=" + myArr.iText;
+                console.log(temp);
+                myImage.src = temp;
+            })
+        })
+    </script>
+</body>
+</html>
