@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complete JavaScript Course</title>
+    <style>
+    </style>
+</head>
+<body>
+    <div id="message">Complete JavaScript Course</div>
+    <div>
+        <input type="text" id="addItem">
+        <input type="button" id="addNew" value="Add to List"> </div>
+    <div id="output">
+        <h1>Shopping List</h1>
+        <ol id="sList"> </ol>
+    </div>
+    <script>
+        document.getElementById("addNew").onclick = function () {
+            addOne();
+        }
+        function addOne() {
+            var a = document.getElementById("addItem").value;
+            var li = document.createElement("li");
+            li.appendChild(document.createTextNode(a));
+            document.getElementById("sList").appendChild(li);
+        }
+    </script>
+
+</body>
+</html>
