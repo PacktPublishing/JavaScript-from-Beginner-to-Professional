@@ -4,10 +4,10 @@
     <title>JavaScript</title>
     <style>
         .ready {
-            background-color: #ddd;
-            color: red;
-            text-decoration: line-through;
-        }
+    background-color: #ddd;
+    color: red;
+    text-decoration: line-through ;
+}
     </style>
 </head>
 <body>
@@ -30,6 +30,7 @@
         }
         function saveTasks() {
             localStorage.setItem('tasklist', JSON.stringify(tasks));
+          
         }
         function buildTasks() {
             tasks.length = 0;
@@ -70,6 +71,7 @@
                 };
                 tasks.push(myObj);
                 saveTasks();
+                buildTasks();
             }
         }
     </script>
