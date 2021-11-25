@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <title>Complete JavaScript Course</title>
+</head>
+<body>
+    <script>
+        console.log(document.cookie);
+        console.log(rCookie("test1"));
+        console.log(rCookie("test"));
+        cCookie("test1", "new Cookie", 30);
+        dCookie("test2");
+        function cCookie(cName, value, days) {
+            if (days) {
+                const d = new Date();
+                d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
+                let e = "; expires=" + d.toUTCString();
+                document.cookie = cName + "=" + value + e + "; path=/";
+            }
+        }
+        function rCookie(cName) {
+            let cookieValue = false;
+            let arr = document.cookie.split("; ");
+            arr.forEach(str => {
+                const cookie = str.split("=");
+                if (cookie[0] == cName) {
+                    cookieValue = cookie[1];
+                }
+            });
+            return cookieValue;
+        }
+        function dCookie(cName) {
+            cCookie(cName, "", -1);
+        }
+    </script>
+
+</body>
+</html>
