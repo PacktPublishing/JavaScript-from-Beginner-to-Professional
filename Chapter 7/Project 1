@@ -15,3 +15,4 @@ Employee.prototype.details = function(){
 
 workers.forEach((person) => {
     console.log(person.details());
+})
