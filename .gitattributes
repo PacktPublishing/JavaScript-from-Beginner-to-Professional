@@ -1,1 +1,4 @@
-*. linguist-language=Javascript
+*.Roff linguist-detectable=false
+
+* linguist-vendored
+*.js linguist-vendored=true
