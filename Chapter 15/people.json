@@ -1,1 +1,17 @@
+[
+    {
+        "first": "Laurence",
+        "last": "Svekis",
+        "topic": "JavaScript"
+    },
+    {
+        "first": "John",
+        "last": "Smith",
+        "topic": "HTML"
+    },
+    {
+        "first": "Jane",
+        "last": "Doe",
+        "topic": "CSS"
+    }
 
