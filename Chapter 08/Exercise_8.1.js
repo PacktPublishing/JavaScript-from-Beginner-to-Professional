@@ -8,6 +8,3 @@ const uri = "http://www.basescripts.com?=Hello World";
 const encoded = encodeURI(uri);
 console.log(encoded);
 
-How's it going?
-How's%20it%20going%3F
-http://www.basescripts.com?=Hello%20World
