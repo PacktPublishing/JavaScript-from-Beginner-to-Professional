@@ -19,7 +19,7 @@ fetch(url)
 */
 
 // people.json 
-[
+/*[
     {
         "first": "Laurence",
         "last": "Svekis",
@@ -36,3 +36,4 @@ fetch(url)
         "topic": "CSS"
     }
 ]
+*/
