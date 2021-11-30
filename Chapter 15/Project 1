@@ -6,7 +6,7 @@
     </body>
 </html>
 
-*/ myscript.js
+/* myscript.js
 let url = "people.json";
 fetch(url)
 .then(response => response.json())
