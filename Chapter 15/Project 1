@@ -6,7 +6,7 @@
     </body>
 </html>
 
-// myscript.js
+*/ myscript.js
 let url = "people.json";
 fetch(url)
 .then(response => response.json())
@@ -16,7 +16,7 @@ fetch(url)
         console.log(`${person.first} ${person.last} - ${person.topic}`);
     });
 });
-
+*/
 
 // people.json 
 [
