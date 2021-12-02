@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+  <body>
+    <div id="app">
+      <p v-if="!hide">
+        Let's play hide and seek. <br />
+        Go to the console and type: <br />
+        obj._data.hide = true <br />
+      </p>
+    </div>
+
+    <script>
+      var obj = new Vue({
+        el: "#app",
+        data: {
+          hide: false,
+        },
+      });
+    </script>
+  </body>
+</html>

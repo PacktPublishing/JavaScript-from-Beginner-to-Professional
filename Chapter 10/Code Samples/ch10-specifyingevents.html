@@ -1,0 +1,13 @@
+
+<html>
+  <body>
+    <p id="unique" onclick="magic()">Click here for magic!</p>
+
+    <script>
+      document.getElementById("unique").onclick = function() { magic() };
+      document.getElementById("unique").addEventListener("click", magic);
+      document.getElementById("unique").addEventListener("click", function() { magic(arg1, arg2) });
+
+    </script>
+  </body>
+</html>

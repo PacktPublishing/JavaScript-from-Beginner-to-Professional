@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        svg {
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <svg id="drawing-area" height=100 width=500></svg>
+    <script>
+        let svg = d3.select("#drawing-area");
+        svg.append("circle")
+            .attr("cx", 100).attr("cy", 50).attr("r", 20).style("fill", "pink");
+        svg.append("circle")
+            .attr("cx", 200).attr("cy", 20).attr("r", 20).style("fill", "black");
+        svg.append("circle")
+            .attr("cx", 300).attr("cy", 70).attr("r", 20).style("fill", "grey");
+    </script>
+</body>
+
+</html>

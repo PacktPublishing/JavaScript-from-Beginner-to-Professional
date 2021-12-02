@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <style>
+      canvas {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="file" id="imgLoader" />
+    <br>
+    <canvas id="canvas"></canvas>
+    <script>
+      let canvas = document.getElementById("canvas");
+      let ctx = canvas.getContext("2d");
+      let imgLoader = document.getElementById("imgLoader");
+      imgLoader.addEventListener("change", upImage, false);
+      function upImage() {
+        let fr = new FileReader();
+        fr.readAsDataURL(event.target.files[0]);
+        fr.onload = function (e) {
+          let img = new Image();
+          img.src = event.target.result;
+          img.onload = function () {
+            canvas.width = img.width;
+            canvas.height = img.height;
+            ctx.drawImage(img, 0, 0);
+          };
+          console.log(fr);
+        };
+      }
+    </script>
+  </body>
+</html>
