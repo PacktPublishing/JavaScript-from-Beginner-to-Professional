@@ -36,7 +36,7 @@
         stars.forEach((star, index) => {
             star.starValue = (index + 1);
             star.addEventListener("click", starRate);
-        })
+        });
         function starRate(e) {
             output.innerHTML = `You Rated this ${e.target.starValue} stars`;
             stars.forEach((star, index) => {
@@ -45,7 +45,7 @@
                 } else {
                     star.classList.remove("orange");
                 }
-            })
+            });
         }
     </script>
 
