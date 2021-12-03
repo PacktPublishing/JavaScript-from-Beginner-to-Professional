@@ -9,24 +9,24 @@ function login(password) {
         if (passwordChecker(password)) {
             resolve({
                 status: true
-            })
+            });
         } else {
             reject({
                 status: false
-            })
+            });
         }
-    })
+    });
 }
 
 function checker(pass) {
     login(pass)
         .then(token => {
             console.log("Approve:");
-            console.log(token)
+            console.log(token);
         })
         .catch(value => {
             console.log("Reject:");
-            console.log(value)
+            console.log(value);
         })
 }
 checker("1234");
