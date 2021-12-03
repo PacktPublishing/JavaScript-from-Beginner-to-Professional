@@ -10,4 +10,4 @@ myPromise
   .then(value => {counter(value); return "one"})
   .then(value => {counter(value); return "two"})
   .then(value => {counter(value); return "three"})
-  .then(value => {counter(value);})
+  .then(value => {counter(value);});
