@@ -2,7 +2,7 @@ let start = 10;
 function loop1(val) { 
     console.log(val); 
     if (val < 1) { 
-        return 
+        return; 
     } 
     return loop1(val - 1); 
 } 
