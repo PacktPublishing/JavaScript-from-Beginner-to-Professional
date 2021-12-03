@@ -7,7 +7,7 @@ while (!correct) {
     guess = Number(guess);
     if (guess === ranNumber) {
         correct = true;
-        console.log("You got it " + ranNumber)
+        console.log("You got it " + ranNumber);
     } else if (guess > ranNumber) {
         console.log("Too high");
     } else {
