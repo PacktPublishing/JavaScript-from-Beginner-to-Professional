@@ -26,7 +26,7 @@
         if (tasks.length > 0) {
             tasks.forEach((task) => {
                 genItem(task.val, task.checked);
-            })
+            });
         }
         function saveTasks() {
             localStorage.setItem("tasklist", JSON.stringify(tasks));
@@ -43,7 +43,7 @@
                     tempTask.checked = true;
                 }
                 tasks.push(tempTask);
-            })
+            });
             saveTasks();
         }
         function genItem(val, complete) {
@@ -58,7 +58,7 @@
             li.addEventListener("click", (e) => {
                 li.classList.toggle("ready");
                 buildTasks();
-            })
+            });
             return val;
         }
         function createListItem() {
