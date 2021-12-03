@@ -13,16 +13,16 @@
         output.style.backgroundColor = "red";
         output.addEventListener("mousedown", function (e) {
             message("green", e);
-        })
+        });
         output.addEventListener("mouseover", function (e) {
             message("red", e);
-        })
+        });
         output.addEventListener("mouseout", function (e) {
             message("yellow", e);
-        })
+        });
         output.addEventListener("mouseup", function (e) {
             message("blue", e);
-        })
+        });
         function message(elColor, event) {
             console.log(event.type);
             output.style.backgroundColor = elColor;
