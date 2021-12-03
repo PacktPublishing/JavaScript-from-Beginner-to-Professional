@@ -40,7 +40,7 @@
             e.preventDefault();
             errors.forEach(function (item) {
                 item.classList.add("hide");
-            })
+            });
             let error = false;
             inputs.forEach(function (el) {
                 let tempName = el.getAttribute("name");
@@ -72,7 +72,7 @@
                     }
                     data[tempName] = el.value;
                 }
-            })
+            });
             if (!error) {
                 myForm.submit();
             }
