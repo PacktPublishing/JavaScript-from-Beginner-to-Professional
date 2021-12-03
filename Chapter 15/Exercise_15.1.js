@@ -17,4 +17,4 @@ fetch(url).then(rep => rep.json())
     data.forEach((el) => {
         console.log(`${el.name} = ${el.status}`);
     });
-})
+});
