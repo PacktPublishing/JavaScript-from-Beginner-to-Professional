@@ -42,16 +42,16 @@
             mLoc.x = e.clientX;
             mLoc.y = e.clientY;
             draw();
-        })
+        });
         canvas.addEventListener("mousedown", (e) => {
             mLoc.draw = true;
-        })
+        });
         canvas.addEventListener("mouseup", (e) => {
             mLoc.draw = false;
-        })
+        });
         canvas.addEventListener("mouseout", (e) => {
             mLoc.draw = false;
-        })
+        });
         function saveImg() {
             const dataURL = canvas.toDataURL();
             console.log(dataURL);
