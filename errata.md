@@ -9,16 +9,16 @@ The example of an `if` statement here explains how a single `=` sign is always t
 Incorrect code is:
 ```
 if(hobby == "coding"){
-console.log("** I love coding too! **");
+  console.log("** I love coding too! **");
 } else {
-console.log("** Can you teach me that? **");
+  console.log("** Can you teach me that? **");
 }
 ```
 Correct code is:
 ```
 if(hobby = "coding"){
-console.log("** I love coding too! **");
+  console.log("** I love coding too! **");
 } else {
-console.log("** Can you teach me that? **");
+  console.log("** Can you teach me that? **");
 }
 ```
