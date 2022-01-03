@@ -24,4 +24,4 @@ if(hobby = "coding"){
 ```
 
 ## Chapter 14, Page 379 - Replaced `Exercise 14.4` with correct solution
-Solution for [Exercise 14.4](https://github.com/PacktPublishing/JavaScript-from-Beginner-to-Professional/blob/main/Chapter14/Exercise_14.4.html) is now fixed.
+Solution for [Exercise 14.4](https://github.com/PacktPublishing/JavaScript-from-Beginner-to-Professional/blob/main/Chapter%2014/Exercise_14.4.html) is now fixed.
