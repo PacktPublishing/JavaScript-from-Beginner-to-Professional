@@ -22,3 +22,6 @@ if(hobby = "coding"){
   console.log("** Can you teach me that? **");
 }
 ```
+
+## Chapter 14, Page 379 - Replaced `Exercise 14.4` with correct solution, and the same is in the Appendix of the book on page #492
+Solution for Exercise 14.4 is now fixed.
