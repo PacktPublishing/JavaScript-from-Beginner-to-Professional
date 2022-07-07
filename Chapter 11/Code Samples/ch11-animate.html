@@ -1,0 +1,30 @@
+<html>
+  <style>
+    div {
+      background-color: purple;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+    }
+  </style>
+  <body>
+    <button onclick="toTheRight()">Go right</button>
+    <div id="block"></div>
+
+    <script>
+      function toTheRight() {
+        let b = document.getElementById("block");
+        let x = 0;
+        setInterval(function () {
+          if (x === 600) {
+            clearInterval();
+          } else {
+            x++;
+            b.style.left = x + "px";
+          }
+        }, 2);
+        
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+  <body>
+    <script>
+      function change(){
+        document.getElementById("shape").classList.remove("blue");
+      }
+    </script>
+    <style>
+      .square {
+        height: 100px;
+        width: 100px;
+        background-color: yellow;
+      }
+
+      .square.blue {
+        background-color: blue;
+      }
+    </style>
+    <div id="shape" class="square blue"></div>
+    
+    <button onclick="change()">Change!</button>
+  </body>
+</html>
