@@ -25,3 +25,17 @@ if(hobby = "coding"){
 
 ## Chapter 14, Page 379 - Replaced `Exercise 14.4` with correct solution
 Solution for [Exercise 14.4](https://github.com/PacktPublishing/JavaScript-from-Beginner-to-Professional/blob/main/Chapter%2014/Exercise_14.4.html) is now fixed.
+
+
+## Chapter 05, Page 89 - Added the missing console.log statement to match the below given output
+```
+while (notFound && someArray.length > 0) {
+  if (someArray[0] === "Louiza") {
+    console.log("Found her!");
+    notFound = false;
+    console.log("false");
+  } else {
+    someArray.shift();
+  }
+}
+```
