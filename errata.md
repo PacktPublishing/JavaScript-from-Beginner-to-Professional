@@ -27,15 +27,20 @@ if(hobby = "coding"){
 Solution for [Exercise 14.4](https://github.com/PacktPublishing/JavaScript-from-Beginner-to-Professional/blob/main/Chapter%2014/Exercise_14.4.html) is now fixed.
 
 
-## Chapter 05, Page 89 - Added the missing `console.log` statement to match the output
+## Chapter 05, Page 89 - Added the missing `console.log` statement on line 8 to match the output
 ```
 while (notFound && someArray.length > 0) {
   if (someArray[0] === "Louiza") {
     console.log("Found her!");
     notFound = false;
-    `console.log("false");`
+    console.log("false");
   } else {
     someArray.shift();
   }
 }
 ```
+
+## Practice exercise 6.4, Page 129 - Fixed the incorrect referencing
+Modify the calculator that you made in Practice exercise `6.2` 
+should be
+Modify the calculator that you made in Practice exercise `6.4`
