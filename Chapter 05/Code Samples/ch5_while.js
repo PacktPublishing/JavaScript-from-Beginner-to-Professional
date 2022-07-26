@@ -11,6 +11,7 @@ while (notFound && someArray.length > 0) {
   if (someArray[0] === "Louiza") {
     console.log("Found her!");
     notFound = false;
+    console.log("false");
   } else {
     someArray.shift();
   }
