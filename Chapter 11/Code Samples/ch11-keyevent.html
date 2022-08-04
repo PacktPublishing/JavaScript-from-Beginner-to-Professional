@@ -1,0 +1,23 @@
+<html>
+  <body>
+    <body>
+      <div id="wrapper">JavaScript is fun!</div>
+      <input type="text" name="myNum1" onkeypress="numCheck()">
+      <input type="text" name="myNum2" onkeypress="numCheck2()">
+      <script>
+        function numCheck() {
+            message("Number: " + !isNaN(event.key));
+            return !isNaN(event.key);
+        }
+
+        function numCheck2() {
+            message("Not a number: " + isNaN(event.key));
+            return isNaN(event.key);
+        }
+
+        function message(m) {
+            document.getElementById('wrapper').innerHTML = m;
+        }
+      </script>
+  </body>
+</html>

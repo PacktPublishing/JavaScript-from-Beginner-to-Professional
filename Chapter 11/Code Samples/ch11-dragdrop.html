@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <style>
+      .box {
+        height: 200px;
+        width: 200px;
+        padding: 20px;
+        margin: 0 50px;
+        display: inline-block;
+        border: 1px solid black;
+      }
+
+      #dragme {
+        background-color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box" ondrop="dDrop()" ondragover="nDrop()">
+      1
+      <div id="dragme" ondragstart="dStart()" draggable="true">
+        Drag Me Please!
+      </div>
+    </div>
+    <div class="box" ondrop="dDrop()" ondragover="nDrop()">2</div>
+   <script>
+      let holderItem;
+
+      function dStart() {
+        holderItem = event.target;
+      }
+
+      function nDrop() {
+        event.preventDefault();
+      }
+
+      function dDrop() {
+       // event.preventDefault();
+        if (event.target.className == "box") {
+          event.target.appendChild(holderItem);
+        }
+      }
+    </script>
+  </body>
+</html>
