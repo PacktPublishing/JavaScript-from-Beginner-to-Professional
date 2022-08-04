@@ -39,6 +39,9 @@ while (notFound && someArray.length > 0) {
   }
 }
 ```
+## Chapter05, Page 112 - Rephrased the 2nd paragrah on the page.
+"We are looking for all the groups that have two or more names starting with an M. If we find such a group, we will log it."
+
 
 ## Practice exercise 6.4, Page 129 - Fixed the incorrect referencing
 Modify the calculator that you made in Practice exercise `6.2` 
