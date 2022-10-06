@@ -1,0 +1,27 @@
+<html>
+  <body>
+    <script>
+      function rainbowify(){
+        let divs = document.getElementsByTagName("div");
+        for(let i = 0; i < divs.length; i++) {
+          divs[i].style.backgroundColor = divs[i].id;
+        }
+      }
+    </script>
+    <style>
+      div {
+        height: 30px;
+        width: 30px;
+        background-color: white;
+      }
+    </style>
+    <div id="red"></div>
+    <div id="orange"></div>
+    <div id="yellow"></div>
+    <div id="green"></div>
+    <div id="blue"></div>
+    <div id="indigo"></div>
+    <div id="violet"></div>
+    <button onclick="rainbowify()">Make me a rainbow</button>
+  </body>
+</html>
