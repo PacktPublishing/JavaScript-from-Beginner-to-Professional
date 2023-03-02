@@ -25,25 +25,3 @@ if(hobby = "coding"){
 
 ## Chapter 14, Page 379 - Replaced `Exercise 14.4` with correct solution
 Solution for [Exercise 14.4](https://github.com/PacktPublishing/JavaScript-from-Beginner-to-Professional/blob/main/Chapter%2014/Exercise_14.4.html) is now fixed.
-
-
-## Chapter 05, Page 89 - Added the missing `console.log` statement on line 8 to match the output
-```
-while (notFound && someArray.length > 0) {
-  if (someArray[0] === "Louiza") {
-    console.log("Found her!");
-    notFound = false;
-    console.log("false");
-  } else {
-    someArray.shift();
-  }
-}
-```
-## Chapter05, Page 112 - Rephrased the 2nd paragrah on the page.
-"We are looking for all the groups that have two or more names starting with an M. If we find such a group, we will log it."
-
-
-## Practice exercise 6.4, Page 129 - Fixed the incorrect referencing
-Modify the calculator that you made in Practice exercise `6.2` 
-should be
-Modify the calculator that you made in Practice exercise `6.4`
