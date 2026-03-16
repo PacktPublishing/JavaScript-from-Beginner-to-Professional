@@ -1,7 +1,6 @@
 theList.pop(); 
 theList.shift(); 
 theList.unshift("FIRST"); 
-theList[3] = "hello World"; 
-theList[2] = "MIDDLE"; 
-theList.push("LAST"); 
+theList.splice(2,5);
+theList.splice(2, 3, "MIDDLE", "hello World", "LAST");
 console.log(theList);
